@@ -1,25 +1,10 @@
-import { useState } from "react";
+import Home from "./pages/Home";
 
 function App() {
-  const [number, setNumber] = useState<number>(0);
-  
+
   return (
     <div>
-      <button
-        onClick={() => {
-          setNumber(number + 1)
-        }}
-      >
-        adcionar
-      </button>
-      <span>{number}</span>
-      <button
-        onClick={() => {
-          setNumber(number - 1)
-        }}
-      >
-        remover
-      </button>
+      <Home />
     </div>
   );
 }
